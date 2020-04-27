@@ -11,7 +11,7 @@ const forecast = (latitude,longitude,callback) => {
       callback('Invalid coordinates. Please try with a different set of coordinates',undefined)
     }
     else {
-      callback(undefined,`The timezone of the city is ${body.timezone}. The temperature is currently ${body.current.temperature} The summary of the weather is ${body.daily.summary} There is ${body.currently.precipProbability}% of rain.`);
+      callback(undefined,`The timezone of the city is ${body.timezone}. The temperature is currently ${body.currently.temperature} Celsius. The summary of the weather is ${body.daily.summary} There is ${body.currently.precipProbability}% of rain.`);
     }
   });
 }
