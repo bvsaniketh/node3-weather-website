@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Index</title>
+  <link rel="icon" href="/imgs/Weather Application Image Icon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  
+  <div class="main-content">
+  {{>header}}
+  <!-- {{title}} This is if to display any passed parameters from web call -->
+  Enter the location name
+  <form>
+    <input placeholder="Location">
+    <button>Search</button><br>
+    <p id="message1">MessageOne</p>
+    <p id="message2"></p>
+  </form>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+{{>footer}}
+
+</html>

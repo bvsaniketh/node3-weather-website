@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <button type="button" onclick="dateFunction()">Click here to display date</button>
+
+
+  <p>
+    <textarea id="myTextArea" rows="3" cols="80">Your text here</textarea>
+  </p>
+
+  <script>
+    function dateFunction() {
+      document.getElementById('myTextArea').innerHTML = Date();
+    }
+  </script>
+
+</body>
+
+</html>
+
+<!-- This one was through a form. -->
+<!-- <form>
+    <input name="Begin Date" size="100">
+    <input onclick="this.form.StartDate.value = new Date();" type="button" value="Start date">
+    <input name="StopDate" size="100">
+    <input onclick="this.form.StopDate.value = new Date();" type="button" value="Stop date">
+</form> -->
