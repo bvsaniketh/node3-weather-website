@@ -11,20 +11,20 @@ const messageTwo = document.querySelector("#message2")
 // hence we have to include preventDefault() so that we get more control over to change
 weatherForm.addEventListener('submit', (e)=> {
     e.preventDefault();
-    const location = locationValue.value; 
+    const location = locationValue.value;
 
     console.log(location);
 
     const url = 'http://localhost:3000/weather?address=' + location;
 
     // then() function is a part of promises
-    fetch(url).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if(data.error) {
                 console.log(data.error);
                 messageOne.textContent = data.error
                 messageTwo.textContent =null;
-            } 
+            }
             else {
             console.log(data.location);
             console.log(data.forecast);
@@ -34,4 +34,3 @@ weatherForm.addEventListener('submit', (e)=> {
         })
     })
 })
-

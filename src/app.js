@@ -6,6 +6,7 @@ const geoCode = require('./utils/geoCode.js');
 const forecast = require('./utils/forecast.js');
 
 const app = express();
+const port = process.env.PORT || 3000
 
 console.log(__dirname);
 
@@ -110,6 +111,6 @@ app.get('/*', (req, res) => {
   console.log('Error page has been called');
 })
 
-app.listen(3000, () => {
-  console.log('Express is running on port 3000');
+app.listen(port, () => {
+  console.log('Express is running on port ' + port);
 })
