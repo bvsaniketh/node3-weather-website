@@ -49,7 +49,7 @@ app.get('/help', (req, res) => {
     name: "Aniketh Bondada",
     age: "24"
   })
-  console.log('Welcome to the help page.');
+  console.log('Welcome to the help page. Aniketh Bondada');
 })
 
 app.get('/about', (req, res) => {
@@ -60,7 +60,7 @@ app.get('/about', (req, res) => {
     age: "24",
     test: "tagtest"
   })
-  console.log('Welcome to the about page. This is express which is a server');
+  console.log('Hosting this web application from express.JS which is a server');
 })
 
 app.get('/weather', (req, res) => {
